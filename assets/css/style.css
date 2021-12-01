@@ -12,6 +12,7 @@ body {
     color: var(--primary-color);
     font-family: Helvetica, Arial sans-serif;
 }
+
 /*appling styles to the header*/
 header {
     padding: 20px 35px;
@@ -36,9 +37,8 @@ header h1 {
     padding: auto;
     position:relative;
     right: 100px;
-   
-    
 }
+
 header h1 a {
     color: var(--primary-color);
     position: relative;
@@ -67,7 +67,6 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-   
 }
 
 header nav ul li a {
@@ -76,5 +75,38 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-bottom: 5px solid var(--secondary-color);
-    
 }
+/*End Header Section*/
+
+/*Hero Section Styling*/
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-position: 80%;
+    position: relative;
+    
+   
+}
+
+.hero h2 {
+    position: absolute;
+    bottom:30px;
+    right: 100px;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    padding: 20px 20px;
+}
+
+/*End Hero Section*/
+
+
+
+/*Mobile info 
+768+ looks good
+375 and lower:  nav gets to small
+320 and lower: nav gets to small & H1 starts to dissapear */

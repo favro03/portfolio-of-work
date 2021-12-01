@@ -1,7 +1,7 @@
 # Portfolio Of Work
 
 ## Purpose
-A website showcasing work I have completed
+A website showcasing work I have completed.
 
 ## Built With
 * HTML

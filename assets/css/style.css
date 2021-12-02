@@ -125,14 +125,14 @@ header nav ul li a {
 /*end section header styling*/
 
 /*About Me Style*/
-.about {
+.about, .work, .contact {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 10px 80px 40px;
+    padding: 40px 10px 20px 40px;
     
 }
 
-.about h2 {
+.about h2, .work h2, .contact h2 {
    
     padding: 0px 10px 80px 80px;
     text-align: right;
@@ -147,18 +147,9 @@ header nav ul li a {
 
 
 /*Work section styling*/
-.work{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 10px 80px 40px;
-    
-}
 
-.work h2 {
-    
-    padding: 0px 10px 80px 80px;
-    font-size: 37px;
-}
+
+
 
 .apps {
     display: flex;
@@ -174,25 +165,14 @@ header nav ul li a {
 .card {
     border: 5px solid var(--secondary-color);
     margin: 10px 0 10px 0;
-    padding: 0;
   
     
 }
 /*end work section*/
 
 /*Contact section styling*/
-.contact{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 10px 80px 40px;
-    
-}
 
-.contact h2 {
-   
-    padding: 0px 10px 80px 40px;
-    font-size: 37px;
-}
+
 
 .data {
     border-left: 5px solid var(--primary-color);

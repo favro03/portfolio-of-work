@@ -29,11 +29,12 @@ header {
 }
 
 header h1 {
-    width: 300px;
+    width: 400px;
     height: 60px;
     margin: 0;   
     font-weight: bold;
     font-size: 36px;    
+    text-align: center;
     background-color: var(--secondary-color);
     padding: auto;
     position:relative;
@@ -138,23 +139,40 @@ header nav ul li a {
     justify-content: space-around;
     width: 80%;
     border-left: 5px solid var(--primary-color);
-    
-    
-   
 }
 
-.card {
+.card1, .card2, .card3, .card4, .card5 {
     border: 5px solid var(--secondary-color);
-    margin: 10px 0 10px 0;
-  
     
+    margin: 10px 0 0 0;
+    position: relative;
+
 }
+.card1 {
+    height: 35%;
+}
+
+.card2, .card3, .card4, .card5 {
+    height: 30.7%;
+  
+}
+
+.card1-info, .card2-info, .card3-info, .card4-info, .card5-info {
+    
+    background-color: var(--secondary-color);
+    
+    width: 150px;
+    height:100px;
+    position: absolute;
+    left: 0px;
+    bottom: 100px; 
+
 /*end work section*/
 
 /*Contact section styling*/
 
 
-.data    ul {
+.data ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

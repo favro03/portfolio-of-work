@@ -10,7 +10,7 @@ A website showcasing work I have completed.
 ## Screenshot
 Here is a screenshot of the completed site:
 
-![portfolio of work screenshot] (/assets/images/portfolio-of-work.png)
+![portfolio of work screenshot](/assets/images/portfolio-of-work.png)
 
 ## Link
 Link to my portfolio of work:

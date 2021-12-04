@@ -2,19 +2,19 @@
     --primary-color: #0f3f58;
     --secondary-color: #50c4d1;
 }
+
 * {
-margin:0;
-padding:0;
-box-sizing: border-box;
-}
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
 
 body {
-    color: var(--primary-color);
-    font-family: Helvetica, Arial sans-serif;
-    
-}
-
-/*appling styles to the header*/
+        color: var(--primary-color);
+        font-family: Helvetica, Arial sans-serif;
+        
+    }
+/*aheader stuyling*/
 header {
     padding: 20px 35px;
     background-color: var(--primary-color);
@@ -22,36 +22,24 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     position:-webkit-sticky;
-    position: sticky;
+   /* position: sticky;
     top:0;
-    z-index: 9999;
-    
+    z-index: 9999;*/
 }
 
 header h1 {
-    width: 400px;
-    height: 60px;
-    margin: 0;   
-    font-weight: bold;
-    font-size: 36px;    
-    text-align: center;
     background-color: var(--secondary-color);
-    padding: auto;
-    position:relative;
-    right: 100px;
+    text-align: right;
+    width: 400px;
+    padding: 20px;
+    position: relative;
+    right: 35px;
 }
 
 header h1 a {
-    color: var(--primary-color);
-    position: relative;
-    left: 90px;
-    top: 10px;
-}
-
-header a {
     text-decoration: none;
-    color: var(--secondary-color);
-    margin: 10px 20px 50px 0;
+    color: var(--primary-color);
+    font-size: 40px;
 }
 
 header nav {
@@ -64,16 +52,30 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding: 20px 10px;
+    border-spacing: 10px;
+}
+header nav ul li {
+    padding: 0 10px;
 }
 
 header nav ul li a {
+ 
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-bottom: 5px solid var(--secondary-color);
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 5px solid var(--secondary-color);  
 }
-/*End Header Section*/
+
+header nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius:  15px;
+    text-shadow: none;
+}
+/*end header*/
 
 /*Hero Section Styling*/
 .hero {
@@ -101,53 +103,56 @@ header nav ul li a {
 /*End Hero Section*/
 
 /*section styling*/
-.about, .work, .contact {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 100px;
-    justify-content: space-around;
-    
+.about, .work, .contact{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin: 30px 0;
 }
-/*section header styling*/
-.about h2, .work h2, .contact h2 {
-    padding: 0px 10px 80px 80px;
-    text-align: right;
-    font-size: 37px;
+
+.flex-row {
+
+width: 25%;
+font-size: 30px;
+text-align: right;
+padding: 5px 30px;
+
 }
-/*end section header styling*/
 
-/*side boarder styling*/
-.info, .apps, .data{
-    border-left: 5px solid var(--primary-color);
-    
+.info, .apps, .data {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+width: 75%;
+border-left: 5px solid var(--primary-color);
+margin: 10px 0;
+padding: 20px 20px;
+
 }
-/*About Me Style*/
-
-
+/*end Section Styling*/
+/*About Me styling*/
 .info {
-    padding: 60px 100px;
-    width: 80%;
+    font-size: 25px;
 }
+/*end contact section*/
 
-
-/*Work section styling*/
-
-
+/*Work Section Styling*/
 .apps {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 80%;
-    border-left: 5px solid var(--primary-color);
-}
-
-.card1, .card2, .card3, .card4, .card5 {
-    border: 5px solid var(--secondary-color);
+    ;
+   
+   
     
+    
+}
+.card1, .card2, .card3, .card4, .card5 {
+    
+    border: 5px solid var(--secondary-color);
     margin: 10px 0 0 0;
     position: relative;
-
 }
+
 .card1 {
     height: 35%;
 }
@@ -172,10 +177,24 @@ header nav ul li a {
     margin: 0;
     padding: 30px 5px;
 }
-/*end work section*/
+.card1:hover{
+    opacity: 0.3;
+}
+.card2:hover{
+    opacity: 0.3;
+}
+.card3:hover{
+    opacity: 0.3;
+}
+.card4:hover{
+    opacity: 0.3;
+}
+.card5:hover{
+    opacity: 0.3;
+}
+/*End work section*/
 
 /*Contact section styling*/
-
 
 .data ul{
     display: flex;
@@ -211,10 +230,11 @@ header nav ul li a {
     color: var(--primary-color);
 }
 
-/*end contact section*/
 
+/*contact section end*/
 
 /*Mobile info 
 768+ looks good
 375 and lower:  nav gets to small
 320 and lower: nav gets to small & H1 starts to dissapear */
+

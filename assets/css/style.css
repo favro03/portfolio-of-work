@@ -123,7 +123,7 @@ padding: 5px 30px;
 .info, .apps, .data {
 display: flex;
 flex-wrap: wrap;
-justify-content: space-evenly;
+justify-content: space-around;
 width: 75%;
 border-left: 5px solid var(--primary-color);
 margin: 10px 0;
@@ -138,10 +138,7 @@ padding: 20px 20px;
 /*end contact section*/
 
 /*Work Section Styling*/
-.apps {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .card1, .card2, .card3, .card4, .card5 {
     display: flex;
     flex-wrap: wrap;
@@ -155,6 +152,12 @@ padding: 20px 20px;
     display: block;
 }
 
+.card1 img{
+    width: 988px;
+}
+.card2 img, .card3 img, .card4 img, .card5 img{
+    width:480px;
+}
 .card1-info, .card2-info, .card3-info, .card4-info, .card5-info {
     
     background-color: var(--secondary-color);
@@ -171,6 +174,7 @@ padding: 20px 20px;
 .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover{
     opacity: 0.3;
 }
+
 /*End work section*/
 
 /*Contact section styling*/
@@ -212,8 +216,110 @@ padding: 20px 20px;
 
 /*contact section end*/
 
-/*Mobile info 
-768+ looks good
-375 and lower:  nav gets to small
-320 and lower: nav gets to small & H1 starts to dissapear */
+/*Responsive Modes */
+@media screen and (min-width: 1441px, max-width: 2560px){
+    .hero h2 {
+        position: absolute;
+        bottom:30px;
+        right: 100px;
+        background-color: var(--secondary-color);
+        font-weight: bold;
+        padding: 40px 40px;
+        font-size: 40px;
+    }.info {
+        font-size: 35px;
+    }
+    .card1 img{
+        width: 1216px;
+        
+    }
+    .card2 img, .card3 img, .card4 img, .card5 img{
+        width: 600px;      
+    }
+    .card2, .card4 {
+        position: relative;
+        left: 159px;
+    }
+    .card3, .card5 {
+        position: relative;
+        right: 159px;
+    }
+    
 
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align:left;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width:100%;
+        justify-content:center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .hero{
+        width: 100%;
+    }
+    .section-title {
+        width: 80%;
+    }
+    .card1 img{
+        width: 480px;
+        height: 200px;
+    }
+
+@media screen and (max-width: 980px) {
+
+    .data ul {
+        margin-top: 20px;
+        width:100%;
+        justify-content:center;
+    }
+    .data ul li a {
+        font-size: 20px;
+    }
+    .data ul li {
+        font-size: 20px;
+    }
+}
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
+@media screen and (max-width: 768px){
+    .flex-row{
+        padding: 5px 20px;
+    }
+}
+
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        display: block;
+    }
+    .hero {
+       background-position: left;
+    }
+    .hero h2 {
+        position: absolute;
+        bottom:30px;
+        right: 0px;
+    }
+    .about, .work, .contact {
+        display: block;
+    }
+    .card1 img, .card2 img, .card3 img,.card4 img, .card5 img{
+        width: 400px;
+       
+    }
+    .number{
+        white-space: nowrap;
+    }
+}
